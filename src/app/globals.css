@@ -21,11 +21,21 @@
 
   --color-bg-main: #fff;
   --color-bg-secondary: #0a0a0a;
+  --color-bg-gray: #e2e6ee;
   --color-black: #000;
+  --color-backdrop: rgba(68, 68, 68, 0.7);
+}
+
+@utility animation {
+  @apply transition-all duration-500 ease-in-out;
 }
 
 :root {
   --background: var(--color-bg-main);
+}
+
+html {
+  @apply scroll-smooth;
 }
 
 body {

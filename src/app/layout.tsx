@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Jost, Noto_Sans, Poppins } from 'next/font/google';
 import './globals.css';
+import { Header } from '@/layout/header';
 
 const jost = Jost({
   variable: '--font-jost',
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${jost.variable} ${noto.variable} ${poppins.variable} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
