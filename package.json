@@ -13,6 +13,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@types/webpack": "^5.28.5",
     "next": "15.2.0",
     "prettier": "^3.5.3",
     "react": "^19.0.0",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -1,24 +1,49 @@
 @import 'tailwindcss';
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@utility container {
+  margin-inline: auto;
+  padding-inline: 20px;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @media (width >= theme(--breakpoint-xl)) {
+    padding-inline: 108px;
   }
 }
 
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 393px;
+  --breakpoint-xl: 1280px;
+
+  --font-*: initial;
+  --font-jost: var(--font-jost);
+  --font-noto: var(--font-noto);
+  --font-poppins: var(--font-poppins);
+
+  --color-bg-main: #fff;
+  --color-bg-secondary: #0a0a0a;
+  --color-black: #000;
+}
+
+:root {
+  --background: var(--color-bg-main);
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply min-h-screen bg-bg-main text-black;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+h1 {
+  @apply font-jost font-semibold text-2xl leading-[1.2] tracking-normal xl:text-5xl xl:leading-[1.2];
+}
+
+h2 {
+  @apply font-jost font-bold text-xl leading-[1.2] tracking-normal xl:text-[40px];
+}
+
+h3 {
+  @apply font-jost font-extrabold text-base leading-[1.2] tracking-normal xl:text-[32px];
+}
+
+h4 {
+  @apply font-jost font-bold text-sm leading-[1.2] tracking-normal xl:text-[28px];
 }
