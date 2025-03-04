@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Jost, Noto_Sans, Poppins } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/layout/header';
+import { Footer } from '@/layout/footer';
 
 const jost = Jost({
   variable: '--font-jost',
@@ -38,6 +39,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
