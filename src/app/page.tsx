@@ -1,3 +1,4 @@
+import { Audience } from '@/sections/audience';
 import { Hero } from '@/sections/hero';
 
 export default function Home() {
@@ -5,9 +6,7 @@ export default function Home() {
     <>
       <main>
         <Hero />
-        <div id="about" className="h-[500px]">
-          About us
-        </div>
+        <Audience />
         <div id="services" className="h-[500px]">
           Services
         </div>
