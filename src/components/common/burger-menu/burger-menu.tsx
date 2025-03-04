@@ -33,7 +33,7 @@ export const BurgerMenu = () => {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-backdrop z-40"
+          className="fixed inset-0 bg-backdrop size-svh z-40"
           onClick={() => setIsOpen(false)}
           aria-hidden="true"
         />
@@ -71,7 +71,7 @@ export const BurgerMenu = () => {
       <div
         id="mobile-menu"
         className={clsx(
-          'fixed top-0 left-0 bottom-0 z-50 flex flex-col gap-6 w-[189px] bg-bg-gray p-4 rounded-r-3xl transform animation',
+          'fixed top-0 left-0 bottom-0 z-50 flex flex-col gap-6 w-[189px] h-screen bg-bg-gray p-4 rounded-r-3xl transform animation',
           isOpen ? 'translate-x-0' : '-translate-x-full'
         )}
         aria-hidden={!isOpen}
