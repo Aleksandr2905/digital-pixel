@@ -50,7 +50,6 @@ export const Slider = ({
         className={clsx(
           'object-cover  xl:absolute',
           {
-            // Стилі для секції "career"
             'xl:w-[611px] xl:h-[437px] bg-[url(/images/career/violet-ellipse.webp)] bg-no-repeat bg-cover bg-[-22px_0px] xl:bg-[-97px_0px]':
               section === 'career',
             'w-[250px] h-[173px] xl:-right-[75px] xl:-bottom-[42px]':
@@ -59,7 +58,6 @@ export const Slider = ({
               section === 'career' && index !== 1,
           },
           {
-            // Стилі для секції "community"
             'xl:w-[337px] xl:h-[285px] w-[180px] h-[152px] xl:right-[67px] xl:bottom-[74px]':
               section === 'community' && index === 1,
             'xl:w-[611px] xl:h-[437px] w-[281px] h-[241px] absolute bottom-[58px] xl:-right-12 xl:bottom-0':

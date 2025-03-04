@@ -1,6 +1,7 @@
 import { Audience } from '@/sections/audience';
 import { Career } from '@/sections/career';
 import { Community } from '@/sections/community';
+import { Contact } from '@/sections/contact';
 import { Hero } from '@/sections/hero';
 
 export default function Home() {
@@ -17,9 +18,7 @@ export default function Home() {
         <div id="pages" className="h-[500px]">
           Pages
         </div>
-        <div id="contact" className="h-[500px]">
-          Contact us
-        </div>
+        <Contact />
       </main>
     </>
   );
