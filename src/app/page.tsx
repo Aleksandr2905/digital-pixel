@@ -1,4 +1,5 @@
 import { Audience } from '@/sections/audience';
+import { Career } from '@/sections/career';
 import { Hero } from '@/sections/hero';
 
 export default function Home() {
@@ -7,9 +8,7 @@ export default function Home() {
       <main>
         <Hero />
         <Audience />
-        <div id="services" className="h-[500px]">
-          Services
-        </div>
+        <Career />
         <div id="portfolio" className="h-[500px]">
           Portfolio
         </div>

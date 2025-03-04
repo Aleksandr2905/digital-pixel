@@ -44,6 +44,18 @@ html {
 body {
   @apply min-h-screen bg-bg-main text-black;
 }
+
+ul {
+  @apply list-none p-0 m-0;
+}
+li {
+  @apply list-none;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
 h1 {
   @apply font-jost font-semibold text-2xl leading-[1.2] tracking-normal xl:text-5xl xl:leading-[1.2];
 }
