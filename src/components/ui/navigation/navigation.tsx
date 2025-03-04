@@ -9,8 +9,6 @@ type NavigationProps = {
 export const Navigation = ({ onClick }: NavigationProps) => {
   const section = useActiveSection();
 
-  console.log(section);
-
   return (
     <nav>
       <ul className="flex flex-col gap-10 xl:flex-row xl:gap-2">
