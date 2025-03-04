@@ -29,7 +29,7 @@ export const Hero = () => {
           {isDesktop && (
             <Link
               href="#contact"
-              className="button flex xl:py-4 xl:px-8 justify-center items-center rounded-[40px] bg-white xl:mt-20 xl:text-lg xl:leading-[1.2] xl:font-semibold xl:mr-auto"
+              className="button flex xl:py-4 xl:px-8 justify-center items-center rounded-[40px] bg-white xl:mt-20 xl:text-lg xl:leading-[1.2] xl:font-semibold xl:mr-auto xl:hover:bg-black xl:hover:text-white xl:hover:outline xl:hover:outline-white  animation"
             >
               Зарегистрироваться
             </Link>
