@@ -12,7 +12,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="bg-[url(/images/hero/bg-hero-mobile.webp)] xl:bg-[url(/images/hero/bg-hero-desktop.webp)] h-[700px] xl:h-[737px] bg-no-repeat bg-cover bg-right-top rounded-b-[72px]"
+      className="bg-[url(/images/hero/bg-hero-mobile.webp)] xl:bg-[url(/images/hero/bg-hero-desktop.webp)] h-[700px] xl:h-[737px] bg-no-repeat bg-cover bg-right-top rounded-b-[72px] mb-10 xl:mb-[100px]"
     >
       <div className="container pt-20 pb-[51px] h-full flex flex-col justify-between xl:pt-[200px] xl:pb-[143px] xl:flex-row">
         <div className="flex flex-col items-center justify-between xl:w-[511px] xl:justify-normal">
@@ -28,7 +28,7 @@ export const Hero = () => {
           </div>
           {isDesktop && (
             <Link
-              href="/"
+              href="#contact"
               className="button flex xl:py-4 xl:px-8 justify-center items-center rounded-[40px] bg-white xl:mt-20 xl:text-lg xl:leading-[1.2] xl:font-semibold xl:mr-auto"
             >
               Зарегистрироваться

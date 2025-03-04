@@ -1,11 +1,11 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+import clsx from 'clsx';
 import { BurgerMenu } from '@/components/common/burger-menu';
 import { Logo } from '@/components/ui/logo';
 import { Navigation } from '@/components/ui/navigation';
 import { useDevice } from '@/hooks';
-import clsx from 'clsx';
-import { useEffect, useState } from 'react';
 
 export const Header = () => {
   const { isMobile, isDesktop } = useDevice();
