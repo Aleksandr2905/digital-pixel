@@ -1,0 +1,14 @@
+<svg  viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Map" clip-path="url(#clip0_16050_704)">
+<path id="Vector" d="M12.75 4.25V4.25708" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12.7493 9.20811L10.2702 5.66644C10.0315 5.23509 9.90954 4.74893 9.91628 4.256C9.92302 3.76308 10.0583 3.28044 10.3086 2.85578C10.559 2.43111 10.9158 2.07912 11.3439 1.83459C11.7719 1.59005 12.2564 1.46143 12.7493 1.46143C13.2423 1.46143 13.7268 1.59005 14.1548 1.83459C14.5829 2.07912 14.9397 2.43111 15.1901 2.85578C15.4404 3.28044 15.5757 3.76308 15.5824 4.256C15.5892 4.74893 15.4672 5.23509 15.2285 5.66644L12.7493 9.20811Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M7.4375 3.36475L6.375 2.8335L2.125 4.9585V14.1668L6.375 12.0418L10.625 14.1668L14.875 12.0418V10.6252" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M6.375 2.8335V12.0418" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M10.625 10.625V14.1667" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_16050_704">
+<rect width="17" height="17" fill="currentColor"/>
+</clipPath>
+</defs>
+</svg>
