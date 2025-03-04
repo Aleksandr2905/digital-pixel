@@ -1,11 +1,10 @@
+import { Hero } from '@/sections/hero';
+
 export default function Home() {
   return (
     <>
       <main>
-        <h1>Hello World</h1>
-        <div id="home" className="h-[500px]">
-          Home
-        </div>
+        <Hero />
         <div id="about" className="h-[500px]">
           About us
         </div>

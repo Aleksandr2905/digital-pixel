@@ -23,6 +23,7 @@
   --color-bg-secondary: #0a0a0a;
   --color-bg-gray: #e2e6ee;
   --color-black: #000;
+  --color-gray: #b2b2b2;
   --color-backdrop: rgba(68, 68, 68, 0.7);
 }
 
@@ -56,4 +57,10 @@ h3 {
 
 h4 {
   @apply font-jost font-bold text-sm leading-[1.2] tracking-normal xl:text-[28px];
+}
+
+@layer components {
+  .button {
+    @apply font-jost font-semibold text-lg leading-[1.2] text-black xl:font-medium xl:text-[22px];
+  }
 }
