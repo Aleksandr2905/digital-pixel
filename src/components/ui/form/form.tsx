@@ -78,7 +78,7 @@ export const Form = () => {
 
         <button
           type="submit"
-          className="w-[246px] h-[39px] bg-black text-white text-base font-medium leading-[1.2] rounded-[40px] flex justify-center items-center mx-auto mt-5 xl:mt-[25px] xl:h-[52px] xl:w-full xl:text-lg xl:leading-[1.2] hover:bg-gray-800"
+          className="w-[246px] h-[39px] bg-black text-white text-base font-medium leading-[1.2] rounded-[40px] flex justify-center items-center mx-auto mt-5 xl:mt-[25px] xl:h-[52px] xl:w-full xl:text-lg xl:leading-[1.2] animation hover:bg-white hover:text-black hover:outline-black hover:outline-1"
         >
           ВІДПРАВИТИ
         </button>
