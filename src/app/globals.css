@@ -90,6 +90,13 @@ h3 {
 .swiper-pagination {
   @apply !relative !bottom-[-2px];
 }
+
+@media (min-width: 1280px) {
+  .swiper-pagination {
+    @apply hidden;
+  }
+}
+
 .swiper-pagination-bullet-active {
   @apply !bg-black;
 }
