@@ -8,7 +8,7 @@ import { Hero } from '@/sections/hero';
 import { Programme } from '@/sections/programme';
 import { Reviews } from '@/sections/reviews';
 import { Speakers } from '@/sections/speakers';
-import { Tariffs } from '@/sections/tariffs';
+import { Pricing } from '@/sections/pricing';
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
         <Career />
         <Programme />
         <Community />
-        <Tariffs />
+        <Pricing />
         <Reviews />
         <Contact />
       </main>
