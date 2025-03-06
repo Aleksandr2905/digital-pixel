@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { services } from '@/utils';
+import ArrowMiddle from '@/../public/icons/arrow-middle.svg';
 
 type Service = {
   id: string;
@@ -16,9 +17,21 @@ type CommonCardProps = {
     img: string;
     alt: string;
   };
+  section: string;
+  currentPage: number;
+  totalPages: number;
+  onPrev: () => void;
+  onNext: () => void;
 };
 
-export const CommonCard = ({ image }: CommonCardProps) => {
+export const CommonCard = ({
+  image,
+  section,
+  currentPage,
+  totalPages,
+  onPrev,
+  onNext,
+}: CommonCardProps) => {
   const [activeService, setActiveService] = useState(services[0]);
   const handleServiceClick = (service: Service) => {
     setActiveService(service);
@@ -62,6 +75,27 @@ export const CommonCard = ({ image }: CommonCardProps) => {
               {service.title}
             </button>
           ))}
+        </div>
+
+        {/* Кнопки управления слайдером */}
+        <div className="flex items-center gap-2 justify-center">
+          <button
+            type="button"
+            className={`swiper-button-prev-${section}`}
+            onClick={onPrev}
+          >
+            <ArrowMiddle className="rotate-180" />
+          </button>
+          <span className="text-xs font-medium leading-[1.2] tabular-nums xl:text-sm xl:leading-[1.2]">
+            {currentPage} / {totalPages}
+          </span>
+          <button
+            type="button"
+            className={`swiper-button-next-${section}`}
+            onClick={onNext}
+          >
+            <ArrowMiddle />
+          </button>
         </div>
       </div>
     </div>
