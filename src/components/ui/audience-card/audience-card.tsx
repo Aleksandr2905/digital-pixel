@@ -19,9 +19,9 @@ export const AudienceCard = () => {
             key={id}
             className="flex flex-col gap-3 py-6 px-3 rounded-[20px] font-jost leading-[1.2] w-[139px] h-[108px] border border-[#919191] xl:px-4 xl:w-[244px] xl:h-[176px]"
           >
-            <h4 className="text-base font-extrabold xl:mt-[18px] xl:text-[28px] xl:font-bold xl:leading-[0.93]">
+            <p className="text-base font-extrabold xl:mt-[18px] xl:text-[28px] xl:font-bold xl:leading-[0.93]">
               {title}
-            </h4>
+            </p>
             <p className="text-[10px] w-[119px] xl:w-[188px] xl:text-base xl:leading-[1.2]">
               {description}
             </p>
