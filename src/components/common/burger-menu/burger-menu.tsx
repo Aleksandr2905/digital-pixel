@@ -35,7 +35,6 @@ export const BurgerMenu = () => {
         <div
           className="fixed inset-0 bg-backdrop w-screen h-screen z-40"
           onClick={() => setIsOpen(false)}
-          aria-hidden="true"
         />
       )}
 

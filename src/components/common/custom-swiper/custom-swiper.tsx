@@ -63,6 +63,7 @@ export const CustomSwiper = forwardRef<SwiperRef, CustomSwiperProps>(
           >
             <button
               type="button"
+              aria-label="button prev slide"
               className={clsx(
                 `swiper-button-prev-${section} absolute`,
                 pricing && '-left-2.5 top-[-270px]',
@@ -73,6 +74,7 @@ export const CustomSwiper = forwardRef<SwiperRef, CustomSwiperProps>(
             </button>
             <button
               type="button"
+              aria-label="button next slide"
               className={clsx(
                 `swiper-button-next-${section} absolute`,
                 pricing && 'right-3 top-[-270px]',
