@@ -61,7 +61,7 @@ export const EducationCard = ({
         <div className="flex items-center gap-2 mx-auto mt-auto xl:mx-0">
           <button
             type="button"
-            className={`swiper-button-prev-${section}`}
+            className={`swiper-button-prev-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
             onClick={onPrev}
           >
             <ArrowMiddle className="rotate-180" />
@@ -71,7 +71,7 @@ export const EducationCard = ({
           </span>
           <button
             type="button"
-            className={`swiper-button-next-${section}`}
+            className={`swiper-button-next-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
             onClick={onNext}
           >
             <ArrowMiddle />

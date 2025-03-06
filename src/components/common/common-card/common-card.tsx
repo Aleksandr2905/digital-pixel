@@ -60,7 +60,7 @@ export const CommonCard = ({
           <span className="absolute z-[0] top-[15px] left-0 bg-black w-[313px] h-[127px] rounded-[20px] xl:w-[594px] xl:h-[227px]"></span>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-[3px] gap-y-3 mt-[15px] mb-10 xl:mt-[58px] xl:gap-3">
+        <div className="flex flex-wrap justify-center gap-[3px] gap-y-3 mt-[15px] mb-10 xl:mt-[58px] xl:mb-[51px] xl:gap-3">
           {services.map((service) => (
             <button
               key={service.id}
@@ -77,11 +77,10 @@ export const CommonCard = ({
           ))}
         </div>
 
-        {/* Кнопки управления слайдером */}
         <div className="flex items-center gap-2 justify-center">
           <button
             type="button"
-            className={`swiper-button-prev-${section}`}
+            className={`swiper-button-prev-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
             onClick={onPrev}
           >
             <ArrowMiddle className="rotate-180" />
@@ -91,7 +90,7 @@ export const CommonCard = ({
           </span>
           <button
             type="button"
-            className={`swiper-button-next-${section}`}
+            className={`swiper-button-next-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
             onClick={onNext}
           >
             <ArrowMiddle />
