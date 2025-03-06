@@ -63,7 +63,7 @@ export const ProgrammeBtn = ({
           maxHeight: isExpanded ? '100vh' : '0',
         }}
       >
-        <div className="h-[100vh] overflow-y-auto relative z-[150]">
+        <div className="h-[100vh] overflow-y-auto xl:h-auto xl:overflow-y-hidden relative z-[150]">
           {modules.map((module, index) => (
             <div
               key={module.id}
@@ -101,7 +101,7 @@ export const ProgrammeBtn = ({
             </div>
           ))}
 
-          <div className="border border-black bg-white rounded-[40px] h-[46px] flex items-center justify-center">
+          <div className="border border-black bg-white rounded-[40px] h-[46px] flex items-center justify-center xl:w-[466px] xl:mx-auto">
             <button
               onClick={() => setIsExpanded(false)}
               className="font-medium"
