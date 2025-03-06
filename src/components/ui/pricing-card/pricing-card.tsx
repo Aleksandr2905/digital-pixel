@@ -25,9 +25,9 @@ export const PricingCard = ({ card }: PricingCardProps) => {
           : 'bg-bg-gray py-4 w-[304px] text-black xl:px-[26px] xl:py-[45px] xl:w-[342px]'
       )}
     >
-      <h4 className="text-[22px] font-medium leading-[1.2] mb-2 h-[21px] xl:h-auto">
+      <p className="text-[22px] font-medium leading-[1.2] mb-2 h-[21px] xl:h-auto">
         {card.title}
-      </h4>
+      </p>
       <p className="text-sm font-normal leading-normal h-9 mb-4">
         {card.description}
       </p>
