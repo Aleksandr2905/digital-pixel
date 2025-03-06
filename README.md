@@ -9,7 +9,7 @@ Digital Pixel - це освітня платформа, що пропонує к
    ```bash
    git clone https://github.com/Aleksandr2905/digital-pixel
 
-   cd carp-travel
+   cd digital-pixel
    ```
 
 2. Install the dependencies:
