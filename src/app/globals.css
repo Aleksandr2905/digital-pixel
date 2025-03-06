@@ -73,10 +73,6 @@ h3 {
   @apply font-jost font-extrabold text-base leading-[1.2] tracking-normal xl:text-[32px];
 }
 
-/* h4 {
-  @apply font-jost font-bold text-base leading-[1.2] tracking-normal xl:text-[28px];
-} */
-
 @layer components {
   .button {
     @apply font-jost font-semibold text-lg leading-[1.2] text-black xl:font-medium xl:text-[22px];

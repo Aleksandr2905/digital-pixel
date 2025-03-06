@@ -73,7 +73,6 @@ export const BurgerMenu = () => {
           'fixed top-0 left-0 bottom-0 z-50 flex flex-col gap-6 w-[189px] h-screen bg-bg-gray p-4 rounded-r-3xl transform animation',
           isOpen ? 'translate-x-0' : '-translate-x-full'
         )}
-        aria-hidden={!isOpen}
       >
         <Logo menu />
         <Navigation onClick={() => setIsOpen(!isOpen)} />

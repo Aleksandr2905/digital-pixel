@@ -6,7 +6,7 @@ type LogoProps = { menu?: boolean };
 
 export const Logo = ({ menu }: LogoProps) => {
   return (
-    <Link href="/">
+    <Link href="/" aria-label="logo">
       <LogoIcon
         width={52}
         height={18}

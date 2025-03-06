@@ -37,9 +37,9 @@ export const Slider = ({
       )}
     >
       <div className="font-jost leading-[1.2] flex flex-col gap-[14px] xl:gap-3">
-        <h4 className="text-white text-base font-extrabold xl:text-[28px]">
+        <p className="text-white text-base font-extrabold xl:text-[28px]">
           {title}
-        </h4>
+        </p>
         <p className="text-gray text-[10px] font-normal w-[288px] xl:text-base xl:leading-[1.2] xl:w-[486px]">
           {description}
         </p>
