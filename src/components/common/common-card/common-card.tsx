@@ -5,7 +5,7 @@ import Image from 'next/image';
 import clsx from 'clsx';
 import { services } from '@/utils';
 import ArrowMiddle from '@/../public/icons/arrow-middle.svg';
-// import { ProgrammeBtn } from '@/components/ui/programme-btn/programme-btn';
+import { ProgrammeBtn } from '@/components/ui/programme-btn/programme-btn';
 
 type Service = {
   id: string;
@@ -61,7 +61,14 @@ export const CommonCard = ({
           <span className="absolute z-[0] top-[15px] left-0 bg-black w-[313px] h-[127px] rounded-[20px] xl:w-[594px] xl:h-[227px]"></span>
         </div>
 
-        {/* {section === 'programme' && <ProgrammeBtn />} */}
+        {section === 'programme' && (
+          <ProgrammeBtn
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPrev={onPrev}
+            onNext={onNext}
+          />
+        )}
 
         <div className="flex flex-wrap justify-center gap-[3px] gap-y-3 mt-[15px] mb-10 xl:mt-[58px] xl:mb-[51px] xl:gap-3">
           {services.map((service) => (
@@ -80,9 +87,7 @@ export const CommonCard = ({
           ))}
         </div>
 
-        {(section === 'cases' ||
-          section === 'speakers' ||
-          section === 'programme') && (
+        {(section === 'cases' || section === 'speakers') && (
           <div className="flex items-center gap-2 justify-center">
             <button
               type="button"
