@@ -100,3 +100,7 @@ h3 {
 .swiper-pagination-bullet-active {
   @apply !bg-black;
 }
+
+/* .swiper {
+  overflow: visible !important;
+} */

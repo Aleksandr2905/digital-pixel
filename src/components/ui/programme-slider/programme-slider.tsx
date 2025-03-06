@@ -1,16 +1,16 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useRef, useState } from 'react';
 import { SwiperRef } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
 import { CommonCard } from '@/components/common/common-card';
 import { CustomSwiper } from '@/components/common/custom-swiper';
-import { casesData } from '@/utils';
+import { programmeData } from '@/utils';
 
-export const CasesSlider = () => {
+export const ProgrammeSlider = () => {
   const swiperRef = useRef<SwiperRef>(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(casesData.length);
+  const [totalPages, setTotalPages] = useState(programmeData.length);
 
   const handlePrev = () => {
     if (swiperRef.current) {
@@ -32,11 +32,11 @@ export const CasesSlider = () => {
     setTotalPages(swiper.slides.length);
   };
 
-  const slides = casesData.map((item, index) => (
+  const slides = programmeData.map((item, index) => (
     <CommonCard
       image={item}
       key={index}
-      section="cases"
+      section="programme"
       currentPage={currentPage}
       totalPages={totalPages}
       onPrev={handlePrev}
@@ -46,7 +46,7 @@ export const CasesSlider = () => {
 
   return (
     <CustomSwiper
-      section="cases"
+      section="programme"
       ref={swiperRef}
       onSlideChange={handleSlideChange}
       onSwiper={handleSwiperInit}

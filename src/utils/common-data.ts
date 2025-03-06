@@ -67,3 +67,14 @@ export const educationData = [
   { img: '/images/education/img-3.webp', alt: 'slide education 3' },
   { img: '/images/education/img-4.webp', alt: 'slide education 4' },
 ];
+
+export const programmeData = [
+  { img: '/images/programme/img-1.webp', alt: 'slide programme 1' },
+  { img: '/images/programme/img-2.webp', alt: 'slide programme 2' },
+  { img: '/images/programme/img-3.webp', alt: 'slide programme 3' },
+  { img: '/images/programme/img-4.webp', alt: 'slide programme 4' },
+  { img: '/images/programme/img-5.webp', alt: 'slide programme 5' },
+  { img: '/images/programme/img-6.webp', alt: 'slide programme 6' },
+  { img: '/images/programme/img-7.webp', alt: 'slide programme 7' },
+  { img: '/images/programme/img-8.webp', alt: 'slide programme 8' },
+];
