@@ -1,14 +1,27 @@
 import Image from 'next/image';
 import PlayIcon from '@/../public/icons/play-circle.svg';
+import ArrowMiddle from '@/../public/icons/arrow-middle.svg';
 
 type EducationCardProps = {
   image: {
     img: string;
     alt: string;
   };
+  section: string;
+  currentPage: number;
+  totalPages: number;
+  onPrev: () => void;
+  onNext: () => void;
 };
 
-export const EducationCard = ({ image }: EducationCardProps) => {
+export const EducationCard = ({
+  image,
+  section,
+  currentPage,
+  totalPages,
+  onPrev,
+  onNext,
+}: EducationCardProps) => {
   const { img, alt } = image;
 
   return (
@@ -32,8 +45,8 @@ export const EducationCard = ({ image }: EducationCardProps) => {
           Смотреть видео
         </a>
       </div>
-      <div className="rounded-[20px] bg-white p-5 flex flex-col gap-2.5 text-black h-[225px] xl:rounded-[40px] xl:gap-12 xl:w-[417px] xl:h-[436px] xl:px-[43px] xl:py-[29px]">
-        <p className="text-base font-extrabold leading-[1.2] xl:text-[32px]">
+      <div className="rounded-[20px] bg-white p-5 flex flex-col text-black h-[225px] xl:rounded-[40px] xl:gap-12 xl:w-[417px] xl:h-[436px] xl:px-[43px] xl:py-[29px]">
+        <p className="text-base font-extrabold leading-[1.2] mb-2.5 xl:text-[32px]">
           Знакомитесь с платформой
         </p>
         <p className="text-xs font-normal leading-[1.2] xl:text-base xl:leading-[1.2]">
@@ -45,6 +58,25 @@ export const EducationCard = ({ image }: EducationCardProps) => {
           pretium vestibulum elit. A massa adipiscing pellentesque tempor ac
           vel.
         </p>
+        <div className="flex items-center gap-2 mx-auto mt-auto xl:mx-0">
+          <button
+            type="button"
+            className={`swiper-button-prev-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
+            onClick={onPrev}
+          >
+            <ArrowMiddle className="rotate-180" />
+          </button>
+          <span className="text-xs font-medium leading-[1.2] tabular-nums xl:text-sm xl:leading-[1.2]">
+            {currentPage} / {totalPages}
+          </span>
+          <button
+            type="button"
+            className={`swiper-button-next-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
+            onClick={onNext}
+          >
+            <ArrowMiddle />
+          </button>
+        </div>
       </div>
     </div>
   );

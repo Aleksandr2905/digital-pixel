@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import clsx from 'clsx';
 import { services } from '@/utils';
+import ArrowMiddle from '@/../public/icons/arrow-middle.svg';
+// import { ProgrammeBtn } from '@/components/ui/programme-btn/programme-btn';
 
 type Service = {
   id: string;
@@ -16,9 +18,21 @@ type CommonCardProps = {
     img: string;
     alt: string;
   };
+  section: string;
+  currentPage: number;
+  totalPages: number;
+  onPrev: () => void;
+  onNext: () => void;
 };
 
-export const CommonCard = ({ image }: CommonCardProps) => {
+export const CommonCard = ({
+  image,
+  section,
+  currentPage,
+  totalPages,
+  onPrev,
+  onNext,
+}: CommonCardProps) => {
   const [activeService, setActiveService] = useState(services[0]);
   const handleServiceClick = (service: Service) => {
     setActiveService(service);
@@ -34,7 +48,7 @@ export const CommonCard = ({ image }: CommonCardProps) => {
         height={350}
         className="border-2 border-black rounded-[20px] w-[313px] h-[350px] object-cover xl:w-[340px] xl:h-[481px]"
       />
-      <div>
+      <div className="relative">
         <div className="relative mt-[18px] h-[141px] xl:h-[235px]">
           <div className="relative z-[1] ml-1 w-[305px] h-[138px] bg-white border border-black rounded-2xl px-9 py-10 mx-auto xl:p-[29px] xl:w-[582px] xl:ml-1.5 xl:h-[235px] xl:flex xl:flex-col xl:justify-center">
             <p className="text-sm font-extrabold leading-[1.2] mb-1 xl:mb-[18px] xl:text-[28px]">
@@ -47,7 +61,9 @@ export const CommonCard = ({ image }: CommonCardProps) => {
           <span className="absolute z-[0] top-[15px] left-0 bg-black w-[313px] h-[127px] rounded-[20px] xl:w-[594px] xl:h-[227px]"></span>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-[3px] gap-y-3 mt-[15px] mb-10 xl:mt-[58px] xl:gap-3">
+        {/* {section === 'programme' && <ProgrammeBtn />} */}
+
+        <div className="flex flex-wrap justify-center gap-[3px] gap-y-3 mt-[15px] mb-10 xl:mt-[58px] xl:mb-[51px] xl:gap-3">
           {services.map((service) => (
             <button
               key={service.id}
@@ -63,6 +79,30 @@ export const CommonCard = ({ image }: CommonCardProps) => {
             </button>
           ))}
         </div>
+
+        {(section === 'cases' ||
+          section === 'speakers' ||
+          section === 'programme') && (
+          <div className="flex items-center gap-2 justify-center">
+            <button
+              type="button"
+              className={`swiper-button-prev-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
+              onClick={onPrev}
+            >
+              <ArrowMiddle className="rotate-180" />
+            </button>
+            <span className="text-xs font-medium leading-[1.2] tabular-nums xl:text-sm xl:leading-[1.2]">
+              {currentPage} / {totalPages}
+            </span>
+            <button
+              type="button"
+              className={`swiper-button-next-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
+              onClick={onNext}
+            >
+              <ArrowMiddle />
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
