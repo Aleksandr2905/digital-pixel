@@ -88,6 +88,7 @@ export const CommonCard = ({
               type="button"
               className={`swiper-button-prev-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
               onClick={onPrev}
+              aria-label="button prev slide"
             >
               <ArrowMiddle className="rotate-180" />
             </button>
@@ -98,6 +99,7 @@ export const CommonCard = ({
               type="button"
               className={`swiper-button-next-${section} animation xl:hover:text-white xl:hover:bg-black xl:hover:rounded-full`}
               onClick={onNext}
+              aria-label="button next slide"
             >
               <ArrowMiddle />
             </button>

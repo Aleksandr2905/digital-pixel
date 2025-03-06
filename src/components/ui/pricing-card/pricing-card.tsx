@@ -17,7 +17,7 @@ export type PricingCardProps = {
 
 export const PricingCard = ({ card }: PricingCardProps) => {
   return (
-    <li
+    <div
       className={clsx(
         'px-6 rounded-[40px] font-jost m-auto',
         card.isDark
@@ -96,6 +96,6 @@ export const PricingCard = ({ card }: PricingCardProps) => {
       >
         Вибрати
       </button>
-    </li>
+    </div>
   );
 };
