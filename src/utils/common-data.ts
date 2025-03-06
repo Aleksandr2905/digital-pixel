@@ -49,44 +49,21 @@ export const speakersData = [
 export const casesData = [
   { img: '/images/cases/img-1.webp', alt: 'slide cases 1' },
   { img: '/images/cases/img-2.webp', alt: 'slide cases 2' },
-  {
-    img: '/images/cases/img-3.webp',
-    alt: 'slide cases 3',
-  },
-  {
-    img: '/images/cases/img-4.webp',
-    alt: 'slide cases 4',
-  },
-  {
-    img: '/images/cases/img-5.webp',
-    alt: 'slide cases 5',
-  },
-  {
-    img: '/images/cases/img-6.webp',
-    alt: 'slide cases 6',
-  },
-  {
-    img: '/images/cases/img-7.webp',
-    alt: 'slide cases 7',
-  },
-  {
-    img: '/images/cases/img-8.webp',
-    alt: 'slide cases 8',
-  },
-  {
-    img: '/images/cases/img-9.webp',
-    alt: 'slide cases 9',
-  },
-  {
-    img: '/images/cases/img-10.webp',
-    alt: 'slide cases 10',
-  },
-  {
-    img: '/images/cases/img-11.webp',
-    alt: 'slide cases 11',
-  },
-  {
-    img: '/images/cases/img-12.webp',
-    alt: 'slide cases 12',
-  },
+  { img: '/images/cases/img-3.webp', alt: 'slide cases 3' },
+  { img: '/images/cases/img-4.webp', alt: 'slide cases 4' },
+  { img: '/images/cases/img-5.webp', alt: 'slide cases 5' },
+  { img: '/images/cases/img-6.webp', alt: 'slide cases 6' },
+  { img: '/images/cases/img-7.webp', alt: 'slide cases 7' },
+  { img: '/images/cases/img-8.webp', alt: 'slide cases 8' },
+  { img: '/images/cases/img-9.webp', alt: 'slide cases 9' },
+  { img: '/images/cases/img-10.webp', alt: 'slide cases 10' },
+  { img: '/images/cases/img-11.webp', alt: 'slide cases 11' },
+  { img: '/images/cases/img-12.webp', alt: 'slide cases 12' },
+];
+
+export const educationData = [
+  { img: '/images/education/img-1.webp', alt: 'slide education 1' },
+  { img: '/images/education/img-2.webp', alt: 'slide education 2' },
+  { img: '/images/education/img-3.webp', alt: 'slide education 3' },
+  { img: '/images/education/img-4.webp', alt: 'slide education 4' },
 ];

@@ -27,6 +27,7 @@ export const CustomSwiper = ({ children, section }: CustomSwiperProps) => {
   const reviews = section === 'reviews';
   const reviewsDesktop = isDesktop && reviews;
   const common = section === 'speakers' || section === 'cases';
+  const education = section === 'education';
 
   return (
     <div className="relative">
@@ -85,8 +86,13 @@ export const CustomSwiper = ({ children, section }: CustomSwiperProps) => {
         </div>
       )}
 
-      {common && (
-        <div className="flex items-center gap-2 absolute bottom-10 left-[38%] z-10 xl:bottom-[69px] xl:left-[64%]">
+      {(common || education) && (
+        <div
+          className={clsx(
+            'flex items-center gap-2 absolute  left-[39%] z-10 xl:bottom-[69px]',
+            education ? 'bottom-12 xl:left-[62%]' : 'bottom-10 xl:left-[64%]'
+          )}
+        >
           <button
             type="button"
             className={clsx(`swiper-button-prev-${section}`)}
