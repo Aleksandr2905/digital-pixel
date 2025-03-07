@@ -9,8 +9,8 @@ import { casesData } from '@/utils';
 
 export const CasesSlider = () => {
   const swiperRef = useRef<SwiperRef>(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(casesData.length);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(casesData.length);
 
   const handlePrev = () => {
     if (swiperRef.current) {

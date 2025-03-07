@@ -5,7 +5,7 @@ import { Slider } from '@/components/common/slider';
 import { careerSlides } from '@/utils';
 
 export const Career = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState<number>(0);
 
   return (
     <section

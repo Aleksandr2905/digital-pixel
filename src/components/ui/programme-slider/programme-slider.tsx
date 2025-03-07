@@ -9,8 +9,8 @@ import { programmeData } from '@/utils';
 
 export const ProgrammeSlider = () => {
   const swiperRef = useRef<SwiperRef>(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(programmeData.length);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(programmeData.length);
 
   const handlePrev = () => {
     if (swiperRef.current) {
