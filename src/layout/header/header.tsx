@@ -30,11 +30,11 @@ export const Header = () => {
   return (
     <header
       className={clsx(
-        'backdrop-blur-md fixed top-0 left-0 right-0 z-[3] animation',
+        'backdrop-blur-md fixed top-0 w-screen z-[3] animation',
         isScrolled ? 'bg-black/50' : 'bg-transparent'
       )}
     >
-      <div className="container flex items-center justify-between py-[18px] xl:py-5 xl:justify-center">
+      <div className="container flex items-center justify-between w-screen py-[18px] mx-auto xl:py-5 xl:justify-center">
         {isDesktop && <Navigation />}
 
         {isMobile && (
