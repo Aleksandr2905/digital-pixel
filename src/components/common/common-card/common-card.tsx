@@ -33,7 +33,7 @@ export const CommonCard = ({
   onPrev,
   onNext,
 }: CommonCardProps) => {
-  const [activeService, setActiveService] = useState(services[0]);
+  const [activeService, setActiveService] = useState<Service>(services[0]);
   const handleServiceClick = (service: Service) => {
     setActiveService(service);
   };
@@ -73,10 +73,11 @@ export const CommonCard = ({
         <div className="flex flex-wrap justify-center gap-[3px] gap-y-3 mt-[15px] mb-10 xl:mt-[58px] xl:mb-[51px] xl:gap-3">
           {services.map((service) => (
             <button
+              type="button"
               key={service.id}
               onClick={() => handleServiceClick(service)}
               className={clsx(
-                'px-2.5 py-1.5 rounded-[28px] text-[10px] font-medium leading-[1.2] border xl:text-lg xl:leading-[1.2] xl:px-4',
+                'px-2.5 py-1.5 rounded-[28px] text-[10px] font-medium leading-[1.2] border xl:text-lg xl:leading-[1.2] xl:px-4 animation hover:bg-black hover:text-white',
                 activeService.id === service.id
                   ? 'bg-black text-white'
                   : 'border-black text-black'

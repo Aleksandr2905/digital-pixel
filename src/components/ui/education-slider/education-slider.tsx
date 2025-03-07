@@ -9,8 +9,8 @@ import { educationData } from '@/utils';
 
 export const EducationSlider = () => {
   const swiperRef = useRef<SwiperRef>(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(educationData.length);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(educationData.length);
 
   const handlePrev = () => {
     if (swiperRef.current) {

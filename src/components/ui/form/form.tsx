@@ -5,8 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import img from '@/../public/images/hero/hero-main.webp';
 
+type FormData = {
+  name: string;
+  email: string;
+  phone: string;
+};
+
 export const Form = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
     phone: '',

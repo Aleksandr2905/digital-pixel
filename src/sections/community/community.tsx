@@ -5,7 +5,7 @@ import { communitySlides } from '@/utils';
 import { useState } from 'react';
 
 export const Community = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState<number>(0);
   return (
     <section
       id="blog"
