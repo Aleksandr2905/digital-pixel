@@ -26,6 +26,7 @@ export const CustomSwiper = forwardRef<SwiperRef, CustomSwiperProps>(
     const pricing = section === 'pricing';
     const reviews = section === 'reviews';
     const reviewsDesktop = isDesktop && reviews;
+    const programme = section === 'programme';
 
     return (
       <div className="relative">
@@ -34,7 +35,7 @@ export const CustomSwiper = forwardRef<SwiperRef, CustomSwiperProps>(
           initialSlide={pricing ? 1 : 0}
           loop={true}
           modules={[Pagination, Navigation]}
-          spaceBetween={reviews ? 0 : 326}
+          spaceBetween={reviews ? 0 : 500}
           slidesPerView={reviewsDesktop ? 3 : 1}
           pagination={(pricing || reviews) && { clickable: true }}
           navigation={{
@@ -44,6 +45,7 @@ export const CustomSwiper = forwardRef<SwiperRef, CustomSwiperProps>(
           onSlideChange={onSlideChange}
           onSwiper={onSwiper}
           className={clsx(
+            programme && 'swiper-custom',
             reviews &&
               'bg-[url(/images/reviews/bg-mobile.webp)] bg-[length:100%_290px] bg-center bg-no-repeat xl:bg-none',
             reviewsDesktop ? 'w-[1064px] bg-black rounded-[40px]' : 'w-full'
