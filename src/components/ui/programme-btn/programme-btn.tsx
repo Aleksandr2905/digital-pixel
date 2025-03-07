@@ -63,7 +63,7 @@ export const ProgrammeBtn = ({
           maxHeight: isExpanded ? '100vh' : '0',
         }}
       >
-        <div className="h-[100vh] overflow-y-auto xl:h-auto xl:overflow-y-hidden relative z-[150]">
+        <div className=" overflow-y-auto xl:h-auto xl:overflow-y-hidden relative z-[150]">
           {modules.map((module, index) => (
             <div
               key={module.id}

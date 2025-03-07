@@ -12,20 +12,18 @@ import { Pricing } from '@/sections/pricing';
 
 export default function Home() {
   return (
-    <>
-      <main>
-        <Hero />
-        <Audience />
-        <Speakers />
-        <Education />
-        <Cases />
-        <Career />
-        <Programme />
-        <Community />
-        <Pricing />
-        <Reviews />
-        <Contact />
-      </main>
-    </>
+    <main className="overflow-hidden">
+      <Hero />
+      <Audience />
+      <Speakers />
+      <Education />
+      <Cases />
+      <Career />
+      <Programme />
+      <Community />
+      <Pricing />
+      <Reviews />
+      <Contact />
+    </main>
   );
 }
