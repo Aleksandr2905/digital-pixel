@@ -24,7 +24,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Digital Pixel',
-  description: '',
+  description: 'Digital Pixel',
 };
 
 export default function RootLayout({
