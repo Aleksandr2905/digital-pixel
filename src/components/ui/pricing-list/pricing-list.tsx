@@ -13,7 +13,7 @@ export const PricingList = () => {
   return (
     <>
       {isMobile && <CustomSwiper section="pricing">{slides}</CustomSwiper>}
-      {isDesktop && <ul className="flex items-center gap-5">{slides}</ul>}
+      {isDesktop && <div className="flex items-center gap-5">{slides}</div>}
     </>
   );
 };

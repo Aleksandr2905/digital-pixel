@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import img from '@/../public/images/hero/hero-main.webp';
+import img from '@/../public/images/contact/contact.webp';
 
 type FormData = {
   name: string;
