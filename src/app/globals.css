@@ -97,6 +97,6 @@ h3 {
   @apply !bg-black;
 }
 
-.swiper-custom {
+.swiper {
   overflow: visible !important;
 }
