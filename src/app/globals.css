@@ -47,7 +47,7 @@ html {
 }
 
 body {
-  @apply min-h-screen bg-bg-main text-black overflow-x-hidden;
+  @apply min-h-screen bg-bg-main text-black;
 }
 
 ul {
