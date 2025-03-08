@@ -12,7 +12,7 @@ import { Pricing } from '@/sections/pricing';
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden w-[393px] xl:w-[1280px] mx-auto">
       <Hero />
       <Audience />
       <Speakers />
