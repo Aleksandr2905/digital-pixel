@@ -30,8 +30,8 @@ export const Header = () => {
   return (
     <header
       className={clsx(
-        'backdrop-blur-md fixed top-0 w-screen z-[3] animation',
-        isScrolled ? 'bg-black/50' : 'bg-transparent'
+        'fixed top-0 w-screen z-[3] animation',
+        isScrolled ? 'bg-black/50 backdrop-blur-md' : 'bg-transparent'
       )}
     >
       <div className="container flex items-center justify-between w-screen py-[18px] mx-auto xl:py-5 xl:justify-center">
